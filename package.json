@@ -1,0 +1,31 @@
+{
+  "name": "imm-webapp-starter",
+  "version": "0.1.0",
+  "author": "Egostigma",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@angular*",
+      "**/@angular*/**"
+    ]
+  },
+  "scripts": {
+    "angular": "yarn workspace @imm-webapp-starter/angular start",
+    "react": "yarn workspace @imm-webapp-starter/react start",
+    "native": "yarn workspace @imm-webapp-starter/react-native start",
+    "native:android": "yarn workspace @imm-webapp-starter/react-native android",
+    "native:ios": "yarn workspace @imm-webapp-starter/react-native ios",
+    "native:web": "yarn workspace @imm-webapp-starter/react-native web",
+    "server": "yarn workspace @imm-webapp-starter/server start",
+    "vue": "yarn workspace @imm-webapp-starter/vue serve",
+    "postinstall": "cd ./packages/react-native && expo-yarn-workspaces postinstall"
+  },
+  "resolutions": {
+    "react": "~16.9.0",
+    "react-native": "~0.61.5"
+  }
+}

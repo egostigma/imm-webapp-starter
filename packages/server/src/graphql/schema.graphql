@@ -1,0 +1,38 @@
+type Query {
+  books: [Books]
+  book(id: String): Books
+}
+
+scalar Date
+
+type Mutation {
+  addBook(
+    isbn: String!
+    title: String!
+    author: String!
+    description: String!
+    published_year: Int!
+    publisher: String!
+  ): Books!
+  updateBook(
+    id: ID!
+    isbn: String
+    title: String
+    author: String
+    description: String
+    published_year: Int
+    publisher: String
+  ): Books!
+  removeBook(id: ID): Books!
+}
+
+type Books {
+  _id: ID!
+  isbn: String
+  title: String
+  author: String
+  description: String
+  published_year: Int
+  publisher: String
+  updated_date: Date
+}

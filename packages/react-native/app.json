@@ -1,0 +1,19 @@
+{
+  "name": "ReactNativeApolloGraphQL",
+  "displayName": "ReactNativeApolloGraphQL",
+  "expo": {
+    "name": "ReactNativeApolloGraphQL",
+    "slug": "ReactNativeApolloGraphQL",
+    "privacy": "unlisted",
+    "sdkVersion": "36.0.0",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "packagerOpts": {
+      "config": "metro.config.js"
+    }
+  }
+}
