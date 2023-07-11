@@ -26,7 +26,7 @@
         "errorhandler": "^1.5.1",
         "graphql-import": "^1.0.0-beta.2",
         "graphql-import-node": "^0.0.4",
-        "mongoose": "^5.9.5",
+        "mongoose": "^5.13.15",
         "winston": "^3.2.1"
     },
     "devDependencies": {
